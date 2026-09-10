@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>City Club Mandya | Premier Social & Recreational Club</title>
+
+    <meta name="description" content="City Club Mandya is a premier social and recreational club in Mandya, Karnataka, offering sports facilities, fine dining, accommodation and member events.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="City Club Mandya">
+    <meta property="og:description" content="City Club Mandya is a premier social and recreational club in Mandya, Karnataka, offering sports facilities, fine dining, accommodation and member events.">
+    <meta property="og:image" content="images/og-image.png">
+    <meta property="og:url" content="https://www.cityclubmandya.com/index.html">
+    <meta property="og:site_name" content="City Club Mandya">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="City Club Mandya | Premier Social & Recreational Club">
+    <meta name="twitter:description" content="City Club Mandya is a premier social and recreational club in Mandya, Karnataka, offering sports facilities, fine dining, accommodation and member events.">
+    <meta name="twitter:image" content="images/og-image.png">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="images/logo.png" as="image">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="preload" as="style" href="css/style.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/png" sizes="256x256" href="images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png" />
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- ===================================================
+         JSON-LD structured data (schema.org SportsClub)
+         NOTE: telephone, streetAddress, postalCode and the
+         geo coordinates below are PLACEHOLDERS — replace with
+         the club's real values before this goes live.
+    ==================================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsClub",
+      "name": "City Club Mandya",
+      "url": "https://www.cityclubmandya.com/",
+      "logo": "https://www.cityclubmandya.com/images/logo.png",
+      "image": "https://www.cityclubmandya.com/images/hero1.jpeg",
+      "description": "City Club Mandya is a premier social and recreational club in Mandya, Karnataka, offering sports facilities, fine dining, accommodation and member events.",
+      "telephone": "+91-XXXXX-XXXXX",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "TODO: fill in street address",
+        "addressLocality": "Mandya",
+        "addressRegion": "Karnataka",
+        "postalCode": "TODO: fill in PIN code",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 12.5273948,
+        "longitude": 76.8934195
+      },
+      "sameAs": [
+        "https://www.facebook.com/",
+        "https://www.instagram.com/",
+        "https://www.youtube.com/"
+      ],
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Indoor Sports (Table Tennis, Billiards, Badminton)" },
+        { "@type": "LocationFeatureSpecification", "name": "Outdoor Sports (Cricket, Volleyball, Jogging Track)" },
+        { "@type": "LocationFeatureSpecification", "name": "Restaurant" },
+        { "@type": "LocationFeatureSpecification", "name": "Bar" },
+        { "@type": "LocationFeatureSpecification", "name": "Gym" },
+        { "@type": "LocationFeatureSpecification", "name": "Accommodation" }
+      ]
+    }
+    </script>
+
+</head>
+
+<body data-page="index">
+
+    <!-- Header + mobile nav are injected by js/partials.js -->
+    <div id="site-header"></div>
+
+    <!-- =====================================================
+                        HERO SLIDER
+    ====================================================== -->
+
+    <section class="hero">
+
+        <!-- Slide 1 -->
+
+        <div class="slide fade">
+
+            <img src="images/hero1.jpeg"
+                 srcset="images/hero1.jpeg 480w, images/hero1.jpeg 1024w, images/hero1.jpeg 2000w"
+                 sizes="100vw"
+                 width="2000" height="1338"
+                 alt="City Club Mandya — clubhouse exterior view"
+                 loading="eager"
+                 fetchpriority="high">
+
+        </div>
+
+        <!-- Slide 2 -->
+
+        <div class="slide fade">
+
+            <img src="images/hero2.jpeg"
+                 srcset="images/hero2.jpeg 480w, images/hero2.jpeg 1024w, images/hero2.jpeg 2000w"
+                 sizes="100vw"
+                 width="2000" height="1338"
+                 alt="City Club Mandya — clubhouse grounds"
+                 loading="eager">
+
+        </div>
+
+        <!-- Slide 3 -->
+
+        <div class="slide fade">
+
+            <img src="images/hero3.png"
+                 srcset="images/hero3.png 480w, images/hero3.png 1024w, images/hero3.png 2000w"
+                 sizes="100vw"
+                 width="2000" height="1338"
+                 alt="City Club Mandya — evening ambience"
+                 loading="eager">
+
+        </div>
+
+        <!-- Dark Overlay -->
+
+        <div class="hero-overlay"></div>
+
+        <!-- Slider Controls -->
+
+        <a class="prev">&#10094;</a>
+
+        <a class="next">&#10095;</a>
+
+        <!-- Slider Dots -->
+
+        <div class="slider-dots">
+
+            <span class="dot"></span>
+
+            <span class="dot"></span>
+
+            <span class="dot"></span>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+                    CLUB NAME BANNER
+    ====================================================== -->
+
+    <section class="club-banner">
+
+        <h1 class="club-title">
+
+            CITY CLUB MANDYA
+
+        </h1>
+
+    </section>
+
+    <!-- =====================================================
+                    WELCOME SECTION
+    ====================================================== -->
+
+    <section class="welcome">
+
+        <div class="container">
+
+            <h2>
+
+                Welcome To
+
+            </h2>
+
+            <div class="section-line"></div>
+
+            <p>
+
+                City Club Mandya is a premier social and recreational destination,
+                offering a perfect blend of tradition, leisure and community spirit.
+                The club provides world-class sports facilities, elegant dining,
+                premium accommodation, family recreation and memorable events,
+                creating a welcoming environment for members and guests alike.
+
+            </p>
+
+            <p>
+
+                With a commitment to excellence and heritage, City Club Mandya
+                continues to serve as a landmark destination where generations
+                gather to celebrate, relax and build lasting relationships.
+
+            </p>
+
+            <a href="about.html"
+               class="btn">
+
+                Read More
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+                    FIND US / LOCATION MAP
+    ====================================================== -->
+
+    <section class="map-section">
+
+        <div class="container">
+
+            <h2>
+
+                Find Us
+
+            </h2>
+
+            <div class="section-line"></div>
+
+            <div class="map-wrapper">
+
+                <div class="map-card">
+
+                    <!-- <a class="map-open-btn"
+                       href="https://www.google.com/maps/place/Mandya+City+Club/@12.5273948,76.8934195,17z/data=!3m1!4b1!4m6!3m5!1s0x3bafa0e02302c95d:0xf60c04d8399102a3!8m2!3d12.5273948!4d76.8934195!16s%2Fg%2F1tgj78ft?entry=ttu&g_ep=EgoyMDI2MDgyNC4wIKXMDSoASAFQAw%3D%3D"
+                       target="_blank"
+                       rel="noopener">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+
+                        Open in Maps
+
+                    </a> -->
+
+                    <iframe
+                        src="https://www.google.com/maps?q=Mandya+City+Club&amp;ll=12.5273948,76.8934195&amp;z=17&amp;output=embed"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="City Club Mandya Location Map">
+                    </iframe>
+
+                </div>
+
+                <div class="map-info">
+
+                    <h3>
+
+                        City Club Mandya
+
+                    </h3>
+
+                    <p>
+
+                        Conveniently located off Sir M. Visvesvaraya Road,
+                        close to BM Habitat Mall, Mandya, Karnataka.
+
+                    </p>
+
+                    <p>
+
+                        Phone : +91 XXXXX XXXXX
+
+                    </p>
+
+                    <a href="https://www.google.com/maps/place/Mandya+City+Club/@12.5273948,76.8934195,17z/data=!3m1!4b1!4m6!3m5!1s0x3bafa0e02302c95d:0xf60c04d8399102a3!8m2!3d12.5273948!4d76.8934195!16s%2Fg%2F1tgj78ft?entry=ttu&g_ep=EgoyMDI2MDgyNC4wIKXMDSoASAFQAw%3D%3D"
+                       class="btn"
+                       target="_blank"
+                       rel="noopener">
+
+                        Get Directions
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+                    UPCOMING EVENTS
+    ====================================================== -->
+
+    <section class="events-preview">
+
+        <div class="container">
+
+            <h2>
+
+                Upcoming Events
+
+            </h2>
+
+            <div class="section-line"></div>
+
+            <div class="event-grid">
+
+                <div class="event-card">
+
+                    <div class="event-image">
+
+                        <img src="images/gallery5.jpeg">
+
+                    </div>
+
+                    <h3>
+
+                        Independence Day Celebration
+
+                    </h3>
+
+                </div>
+
+                <div class="event-card">
+
+                    <div class="event-image">
+
+                         <img src="images/gallery6.jpeg">
+
+                    </div>
+
+                    <h3>
+
+                        Annual Sports Meet
+
+                    </h3>
+
+                </div>
+
+                <div class="event-card">
+
+                    <div class="event-image">
+
+                         <img src="images/gallery4.jpeg">
+
+                    </div>
+
+                    <h3>
+
+                        Family Cultural Evening
+
+                    </h3>
+
+                </div>
+
+            </div>
+
+            <a href="events.html"
+               class="btn">
+
+                View All Events
+
+            </a>
+
+        </div>
+
+    </section>
+        <!-- =====================================================
+                    GALLERY PREVIEW
+    ====================================================== -->
+
+    <section class="gallery-preview">
+
+        <div class="container">
+
+            <h2>
+
+                Gallery Highlights
+
+            </h2>
+
+            <div class="section-line"></div>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+
+                    <img src="images/gallery1.jpeg"
+                         srcset="images/gallery1.jpeg 300w, images/gallery1.jpeg 600w, images/gallery1.jpeg 900w"
+                         sizes="(max-width:600px) 100vw, 33vw"
+                         width="300" height="300"
+                         alt="City Club Mandya — clubhouse grounds"
+                         loading="lazy">
+
+                </div>
+
+                <div class="gallery-item">
+
+                    <img src="images/gallery2.jpeg"
+                         srcset="images/gallery2.jpeg 300w, images/gallery2.jpeg 600w, images/gallery2.jpeg 900w"
+                         sizes="(max-width:600px) 100vw, 33vw"
+                         width="300" height="300"
+                         alt="City Club Mandya — dining hall"
+                         loading="lazy">
+
+                </div>
+
+                <div class="gallery-item">
+
+                    <img src="images/gallery3.jpeg"
+                         srcset="images/gallery3.jpeg 300w, images/gallery3.jpeg 600w, images/gallery3.jpeg 900w"
+                         sizes="(max-width:600px) 100vw, 33vw"
+                         width="300" height="300"
+                         alt="City Club Mandya — indoor games room"
+                         loading="lazy">
+
+                </div>
+
+                <div class="gallery-item">
+
+                    <img src="images/gallery4.jpeg"
+                         srcset="images/gallery4.jpeg 300w, images/gallery4.jpeg 600w, images/gallery4.jpeg 900w"
+                         sizes="(max-width:600px) 100vw, 33vw"
+                         width="300" height="300"
+                         alt="City Club Mandya — banquet hall"
+                         loading="lazy">
+
+                </div>
+
+                <div class="gallery-item">
+
+                    <img src="images/gallery5.jpeg"
+                         srcset="images/gallery5.jpeg 300w, images/gallery5.jpeg 600w, images/gallery5.jpeg 900w"
+                         sizes="(max-width:600px) 100vw, 33vw"
+                         width="300" height="300"
+                         alt="City Club Mandya — sports courts"
+                         loading="lazy">
+
+                </div>
+
+                <div class="gallery-item">
+
+                    <img src="images/gallery6.jpeg"
+                         srcset="images/gallery6.jpeg 300w, images/gallery6.jpeg 600w, images/gallery6.jpeg 900w"
+                         sizes="(max-width:600px) 100vw, 33vw"
+                         width="300" height="300"
+                         alt="City Club Mandya — swimming pool"
+                         loading="lazy">
+
+                </div>
+
+            </div>
+
+            <div class="gallery-button">
+
+                <a href="gallery.html" class="btn">
+
+                    View Complete Gallery
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+                    CONTACT US
+    ====================================================== -->
+<!-- 
+    <section class="contact-cta">
+
+        <div class="container">
+
+            <h2>
+
+                Get In Touch
+
+            </h2>
+
+            <div class="section-line"></div>
+
+            <p>
+
+                Have a question about membership, events or facilities?
+                Reach out to us directly by phone or email and our team
+                will be happy to help.
+
+            </p>
+
+                 NOTE: phone number below is a placeholder — replace
+                 with the club's real number before this goes live -->
+<!-- 
+            <div class="contact-buttons">
+
+                <a href="mailto:info@cityclubmandya.com" class="btn">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6Z"></path><path d="m22 6-10 7L2 6"></path></svg>
+
+                    Email Us
+
+                </a>
+
+                <a href="tel:+919876543210" class="btn btn-outline">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg>
+
+                    Call Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section> --> 
+
+
+    <!-- Footer is injected by js/partials.js -->
+    <div id="site-footer"></div>
+
+    <!-- WhatsApp click-to-chat button, injected by js/partials.js -->
+    <!-- <div id="site-whatsapp"></div> -->
+
+    <script src="js/partials.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+# robots.txt for City Club Mandya
+# NOTE: Update the sitemap URL below if the site is deployed to a
+# different domain than the placeholder used here.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.cityclubmandya.com/sitemap.xml
