@@ -39,6 +39,193 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
+ <!-- =====================================================
+         GALLERY PAGE — REFINEMENTS
+         Scoped to this page only (.full-gallery-grid)
+    ====================================================== -->
+    <style>
+
+        .full-gallery-grid .gallery-item{
+
+            /* height of the caption strip, reused below */
+            --gal-label-h: 48px;
+
+            position:relative;
+            overflow:hidden;
+            background:var(--white);
+            border:1px solid rgba(31,92,70,.22);
+            border-radius:12px;
+            box-shadow:0 6px 18px rgba(0,0,0,.07);
+            transition:transform .45s cubic-bezier(.22,.61,.36,1),
+                       box-shadow .45s cubic-bezier(.22,.61,.36,1),
+                       border-color .45s ease;
+
+        }
+
+        /* Subtle lift instead of a large jump */
+        .full-gallery-grid .gallery-item:hover{
+
+            transform:translateY(-4px);
+            box-shadow:0 14px 30px rgba(0,0,0,.12);
+            border-color:rgba(31,92,70,.38);
+
+        }
+
+        .full-gallery-grid .gallery-item img{
+
+            display:block;
+            position:relative;
+            z-index:0;
+            width:100%;
+            border-radius:0;
+            transform-origin:center center;
+            transition:transform .7s cubic-bezier(.22,.61,.36,1);
+
+        }
+
+        /* Gentle zoom — was 1.08, now barely perceptible */
+        .full-gallery-grid .gallery-item:hover img{
+
+            transform:scale(1.035);
+
+        }
+
+        /* -------- Caption: centered, below the image, inside the border -------- */
+        .full-gallery-grid .gallery-item .gallery-label{
+
+            position:static;
+            z-index:4;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:var(--gal-label-h);
+            width:100%;
+            margin:0;
+            padding:0 12px;
+            background:var(--white);
+            border-top:1px solid rgba(31,92,70,.16);
+            color:var(--primary);
+            font-family:'Cinzel',serif;
+            font-size:13px;
+            font-weight:600;
+            letter-spacing:.14em;
+            text-transform:uppercase;
+            text-align:center;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            transition:color .4s ease, background .4s ease;
+
+        }
+
+        .full-gallery-grid .gallery-item:hover .gallery-label{
+
+            color:var(--primary-dark,var(--primary));
+            background:#fbfaf6;
+
+        }
+
+        /* -------- Hover wash: covers the image only, not the caption -------- */
+        .full-gallery-grid .gallery-item::before{
+
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:var(--gal-label-h);
+            width:auto;
+            height:auto;
+            background:linear-gradient(to top,rgba(10,20,16,.42) 0%,rgba(10,20,16,.10) 45%,rgba(10,20,16,0) 100%);
+            opacity:0;
+            z-index:2;
+            transition:opacity .45s ease;
+
+        }
+
+        .full-gallery-grid .gallery-item:hover::before{
+
+            opacity:1;
+
+        }
+
+        /* -------- Refined view indicator (replaces the ⊕ glyph) -------- */
+        .full-gallery-grid .gallery-item::after{
+
+            content:"+";
+            position:absolute;
+            top:calc(50% - (var(--gal-label-h) / 2));
+            left:50%;
+            transform:translate(-50%,-50%) scale(.94);
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            width:50px;
+            height:50px;
+            border:1px solid rgba(255,255,255,.7);
+            border-radius:50%;
+            background:rgba(10,20,16,.22);
+            -webkit-backdrop-filter:blur(3px);
+            backdrop-filter:blur(3px);
+
+            color:#fff;
+            font-family:'Poppins',sans-serif;
+            font-size:24px;
+            font-weight:300;
+            line-height:1;
+            padding-bottom:2px;
+
+            opacity:0;
+            z-index:3;
+            pointer-events:none;
+            transition:opacity .45s ease, transform .45s cubic-bezier(.22,.61,.36,1);
+
+        }
+
+        .full-gallery-grid .gallery-item:hover::after{
+
+            opacity:1;
+            transform:translate(-50%,-50%) scale(1);
+
+        }
+
+        /* Touch devices: no hover state, so keep it clean */
+        @media (hover:none){
+
+            .full-gallery-grid .gallery-item::after,
+            .full-gallery-grid .gallery-item::before{
+
+                display:none;
+
+            }
+
+            .full-gallery-grid .gallery-item:hover{
+
+                transform:none;
+
+            }
+
+        }
+
+        @media (max-width:600px){
+
+            .full-gallery-grid .gallery-item{
+
+                --gal-label-h: 44px;
+
+            }
+
+            .full-gallery-grid .gallery-item .gallery-label{
+
+                font-size:12px;
+                letter-spacing:.12em;
+
+            }
+
+        }
+
+    </style>
 
 </head>
 
