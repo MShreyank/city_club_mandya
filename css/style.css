@@ -1179,6 +1179,30 @@ section{
     cursor:pointer;
 
 }
+.full-gallery-grid .gallery-item {
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+}
+.full-gallery-grid .gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.gallery-label {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    background: rgba(10,20,16,.82);
+    color: var(--accent-on-dark);
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.full-gallery-grid .gallery-item {
+    position: relative;
+}
+
+
 
 .gallery-item img{
 
